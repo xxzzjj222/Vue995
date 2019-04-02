@@ -5,7 +5,7 @@
 
         <!--内容-->
         <h1>123</h1>
-        <!--底部-->
+        <!--底部tabbar-->
         <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
 				<span class="mui-icon mui-icon-home"></span>
