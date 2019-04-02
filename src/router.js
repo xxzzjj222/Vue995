@@ -1,7 +1,8 @@
 import VueRouter from "vue-router"
 
 var router=new VueRouter({
-    routers:[]
+    routers:[],
+    linkActiveClass:'mui-active'
 })
 
 export default router
