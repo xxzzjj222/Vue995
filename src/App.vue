@@ -4,7 +4,10 @@
         <mt-header fixed title="Vue项目"></mt-header>
 
         <!--内容-->
-        <h1>123</h1>
+        <router-view></router-view>
+		<h3>你好</h3>
+
+		
         <!--底部tabbar-->
         <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
