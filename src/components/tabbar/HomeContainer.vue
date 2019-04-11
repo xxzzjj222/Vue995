@@ -11,10 +11,10 @@
 
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/newslist">
           <span class="mui-icon mui-icon-home"></span>
           <div class="mui-media-body">新闻资讯</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
@@ -62,7 +62,7 @@ export default {
     };
   },
   created() {
-    this.getLunbotu();
+    //this.getLunbotu();
   },
   methods: {
     getLunbotu() {
@@ -97,12 +97,12 @@ export default {
 .mui-grid-view.mui-grid-9 {
   background-color: #fff;
   border: none;
-  .mui-media-body{
-      font-size:12px;
+  .mui-media-body {
+    font-size: 12px;
   }
 }
 .mui-grid-view.mui-grid-9 .mui-table-view-cell {
-    border:none
+  border: none;
 }
 </style>
 
