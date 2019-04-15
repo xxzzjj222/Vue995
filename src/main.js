@@ -15,8 +15,12 @@ import router from './router.js'
 
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
-Vue.http.options.root='http://localhost:8080'
+//Vue.http.options.root='http://localhost:8080'
 
+import moment from 'moment'
+Vue.filter('dataFormat',function(dataStr,pattern="YYYY-MM-DD HH-mm-ss"){
+    return moment(dataStr).format(pattern)
+})
 
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
