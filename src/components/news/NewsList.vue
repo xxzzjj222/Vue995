@@ -99,7 +99,7 @@ export default {
   },
   methods: {
     getNewsList() {
-      this.$http.get("api/getNewsList").then(result => {
+      this.$http.get("api/").then(result => {
         if (result.body.status == 0) {
           this.newsList = result.body.message;
         } else {

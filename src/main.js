@@ -2,7 +2,8 @@ import Vue from 'vue'
 import {
     Header,
     Swipe,
-    SwipeItem
+    SwipeItem,
+    Button
 } from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import './lib/mui/css/mui.min.css'
@@ -19,12 +20,13 @@ Vue.use(VueResource)
 
 import moment from 'moment'
 Vue.filter('dataFormat',function(dataStr,pattern="YYYY-MM-DD HH-mm-ss"){
-    return moment(dataStr).format(pattern)
+    return moment(dataStr,moment.ISO_8601).format(pattern)
 })
 
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
+Vue.component(Button.name,Button)
 
 import app from './App.vue'
 
