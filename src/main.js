@@ -20,7 +20,7 @@ Vue.use(VueResource)
 
 import moment from 'moment'
 Vue.filter('dataFormat',function(dataStr,pattern="YYYY-MM-DD HH-mm-ss"){
-    return moment(dataStr,moment.ISO_8601).format(pattern)
+    return moment(dataStr).format(pattern)
 })
 
 Vue.component(Header.name, Header)
